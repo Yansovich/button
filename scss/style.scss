@@ -1,0 +1,55 @@
+@import 'reset';
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    .btn {
+        width: 22.5rem;
+        height: 5.2rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-radius: 5rem;
+        line-height: 1.95rem;
+        padding: 1.6rem 3.2rem;
+        cursor: pointer;
+    
+        &:active {
+            scale: 0.95;
+        }
+
+        &_theme_primary {
+            color: #FFFFFF;
+            border: 1px solid #EE3124;
+            background-color: #EE3124;
+        
+            &:hover {
+                border: 1px solid #B20000;
+                background-color: #B20000;
+            }
+            
+            &:disabled {
+                border: 1px solid #CED5DD;
+                background-color: #CED5DD;
+            } 
+        }
+
+        &_theme_secondary {
+            color: #24252E;
+            border: 1px solid #EE3124;
+            background-color: #FFFFFF;
+
+            &:hover {
+                border: 1px solid #B20000;
+                background-color: #FFFFFF;
+            }
+        
+            &:disabled {
+                border: 1px solid #CED5DD;
+                background-color: #FFFFFF;
+            }
+        }  
+    }
+}
